@@ -4,7 +4,24 @@ import { Link } from "react-router-dom";
 const Section1 = () => {
   return (
     <Box>
-     
+      <Flex  
+      bg="red.500"  
+      color="white"  
+      align="center"  
+      justify="center"  
+      padding="20px"  
+      borderRadius="md"  
+      cursor="pointer"  
+      height={"110px"}
+      width={"89.5%"}
+      ml={"100px"}
+      mb={"30px"}
+    >  
+      <Text fontSize="30px" textAlign="center">  
+        Join us in supporting the American Red Cross. Help people affected by Hurricane Helene
+        &gt;  
+      </Text>   
+    </Flex> 
       <Flex justifyContent={"center"} pr={[5, 5, 8, 10]} pl={[5, 5, 8, 10]}>
         <Link to={"/patio-covers"}>
           <img
@@ -35,10 +52,10 @@ const Section1 = () => {
             gap={0.5}
           >
             <Text fontWeight={700} fontSize={"1.1rem"}>
-              $2,299.99 After $400 OFF
+              $500 OFF
             </Text>
             <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=2127689-847__1&recipeName=350"
+              src="https://cdn.bfldr.com/U447IH35/as/sn8fp8b6nj95w9bn53k8rbx/4000240858-847__1?auto=webp&amp;format=jpg&amp;width=350&amp;height=350"
               alt=""
             />
             <Text
@@ -46,7 +63,7 @@ const Section1 = () => {
               fontWeight={600}
               fontSize={"small"}
             >
-              yardistry contemporary gazebo
+              FABRIC SECTIONAL
             </Text>
           </SimpleGrid>
         </Link>
@@ -60,10 +77,10 @@ const Section1 = () => {
             gap={0.5}
           >
             <Text fontWeight={700} fontSize={"1.1rem"}>
-              $1,799.99 After $500 OFF
+               $700 OFF
             </Text>
             <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=4000195905-847__1&recipeName=350"
+              src="https://cdn.bfldr.com/U447IH35/as/tpw86536rfsg6mk7wt8f8xrx/2670948-847__1?auto=webp&format=jpg&width=350&height=350"
               alt=""
             />
             <Text
@@ -71,7 +88,7 @@ const Section1 = () => {
               fontWeight={600}
               fontSize={"small"}
             >
-              agio portland patio seating set
+              WOOD SHED
             </Text>
           </SimpleGrid>
         </Link>
@@ -85,10 +102,10 @@ const Section1 = () => {
             gap={0.5}
           >
             <Text fontWeight={700} fontSize={"1.1rem"}>
-              $479.99 After $100 OFF
+              $429.99
             </Text>
             <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=4000040643-847__1&recipeName=350"
+              src="https://cdn.bfldr.com/U447IH35/as/j7w4pvrmnf46v89p888b8xz/9465800-847__3?auto=webp&format=jpg&width=350&height=350"
               alt=""
             />
             <Text
@@ -96,7 +113,7 @@ const Section1 = () => {
               fontWeight={600}
               fontSize={"small"}
             >
-              novaform 14 inch queen mattress
+              65 INCH TV
             </Text>
           </SimpleGrid>
         </Link>
@@ -110,68 +127,17 @@ const Section1 = () => {
             gap={0.5}
           >
             <Text fontWeight={700} fontSize={"1.1rem"}>
-              $1,299.99 After $200 OFF
-            </Text>
-            <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1630963-847__1&recipeName=350"
-              alt=""
-            />
-            <Text
-              textTransform={"uppercase"}
-              fontWeight={600}
-              fontSize={"small"}
-            >
-              thomasville langdon sectional
-            </Text>
-          </SimpleGrid>
-        </Link>
-
-        <Link to={"/random"}>
-          <SimpleGrid
-            bg={"#EEEEEE"}
-            borderRadius={12}
-            boxShadow={"md"}
-            cursor={"pointer"}
-            gap={0.5}
-          >
-            <Text fontWeight={700} fontSize={"1.1rem"}>
-              $650 OFF
-            </Text>
-            <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1751993-847__1&recipeName=350"
-              alt=""
-            />
-            <Text
-              textTransform={"uppercase"}
-              fontWeight={600}
-              fontSize={"small"}
-            >
-              lg 26 cubic foot refrigerator
-            </Text>
-          </SimpleGrid>
-        </Link>
-
-        <Link to={"/random"}>
-          <SimpleGrid
-            bg={"#EEEEEE"}
-            boxShadow={"md"}
-            borderRadius={12}
-            cursor={"pointer"}
-            gap={0.5}
-          >
-            <Text fontWeight={700} fontSize={"1.1rem"}>
               $320 OFF
             </Text>
             <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1418178-847__1&recipeName=350"
-              alt=""
+              src="https://cdn.bfldr.com/U447IH35/as/q3cvmpwbcjwm6chqrzqjfcqr/6660750-847__1?auto=webp&amp;format=jpg&amp;width=350&amp;height=350"
             />
             <Text
               textTransform={"uppercase"}
               fontWeight={600}
               fontSize={"small"}
             >
-              whirlpool top control dishwasher
+              DISHWASHER
             </Text>
           </SimpleGrid>
         </Link>
@@ -185,10 +151,10 @@ const Section1 = () => {
             gap={0.5}
           >
             <Text fontWeight={700} fontSize={"1.1rem"}>
-              $69.99 After $10 OFF
+              $30 OFF
             </Text>
             <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1794675-847__1&recipeName=350"
+              src="https://cdn.bfldr.com/U447IH35/as/c3np9vpb92xjktb3ngh3hm7/3449587-847__1?auto=webp&amp;format=jpg&amp;width=350&amp;height=350"
               alt=""
             />
             <Text
@@ -196,7 +162,57 @@ const Section1 = () => {
               fontWeight={600}
               fontSize={"small"}
             >
-              spafinder two $50 e gift cards
+              AIR PURIFIER
+            </Text>
+          </SimpleGrid>
+        </Link>
+
+        <Link to={"/random"}>
+          <SimpleGrid
+            bg={"#EEEEEE"}
+            boxShadow={"md"}
+            borderRadius={12}
+            cursor={"pointer"}
+            gap={0.5}
+          >
+            <Text fontWeight={700} fontSize={"1.1rem"}>
+              $50 OFF
+            </Text>
+            <img
+              src="https://cdn.bfldr.com/U447IH35/as/nbjrrhbww3vxb7jf7wpmrbn/4000294363-847__1?auto=webp&amp;format=jpg&amp;width=350&amp;height=350"
+              alt=""
+            />
+            <Text
+              textTransform={"uppercase"}
+              fontWeight={600}
+              fontSize={"small"}
+            >
+              KNIFE SET
+            </Text>
+          </SimpleGrid>
+        </Link>
+
+        <Link to={"/random"}>
+          <SimpleGrid
+            bg={"#EEEEEE"}
+            borderRadius={12}
+            boxShadow={"md"}
+            cursor={"pointer"}
+            gap={0.5}
+          >
+            <Text fontWeight={700} fontSize={"1.1rem"}>
+              Member Only
+            </Text>
+            <img
+              src="https://cdn.bfldr.com/U447IH35/at/n4vrcjww5xx9z6vn7bpmr4/1795801-847__1.jpg?auto=webp&format=jpg&width=350&height=350"
+              alt=""
+            />
+            <Text
+              textTransform={"uppercase"}
+              fontWeight={600}
+              fontSize={"small"}
+            >
+              INSTCART
             </Text>
           </SimpleGrid>
         </Link>
@@ -209,10 +225,10 @@ const Section1 = () => {
             cursor={"pointer"}
           >
             <Text fontWeight={700} fontSize={"1.1rem"}>
-              $59.99 After $20 OFF
+               $18 OFF
             </Text>
             <img
-              src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1546146-847__1&recipeName=350"
+              src="https://cdn.bfldr.com/U447IH35/at/7ftnckbzvbr8sv56n2nq9q4/1491066-847__1.jpg?auto=webp&format=jpg&width=350&height=350"
               alt=""
             />
             <Text
@@ -220,7 +236,7 @@ const Section1 = () => {
               fontWeight={600}
               fontSize={"small"}
             >
-              raw manuka honey 8.8 oz
+              FRONTLINE
             </Text>
           </SimpleGrid>
         </Link>

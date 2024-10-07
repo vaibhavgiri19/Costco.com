@@ -26,6 +26,65 @@ const Cards = ({ cardText, image, textColor, imageBg }) => {
 const Section2 = () => {
   return (
     <Box>
+      <Link to={"/baby"}>
+        <Flex
+          pr={20}
+          pl={20}
+          pt={4}
+          justifyContent={"center"}
+          display={["none", "none", "flex", "flex"]}
+        >
+          <img
+            src="https://mobilecontent.costco.com/live/resource/img/24w01100/d-24w01100-banner-gold-pamp.jpg"
+            alt=""
+            width={"100%"}
+            height={"200px"}
+          />
+        </Flex>
+
+        <SimpleGrid
+          gridTemplateColumns={[
+            "repeat(1,1fr)",
+            "repeat(1,1fr)",
+            "repeat(2,1fr)",
+            "repeat(2,1fr)",
+          ]}
+          gap={10}
+          pr={20}
+          pl={20}
+          pt={4}
+          justifyContent={"center"}
+        >
+          <Box>
+            <img
+              src="https://mobilecontent.costco.com/live/resource/img/24w01107/d-24w01107-banner-membership-v.jpg"
+              alt=""
+              width={"100%"}
+            />
+          </Box>
+          <Box>
+            <img
+              src="https://mobilecontent.costco.com/live/resource/img/24w01107/d-24w01107-banner-renew-membership.jpg"
+              alt=""
+              width={"100%"}
+            />
+          </Box>
+        </SimpleGrid>
+
+        <Flex
+          pr={5}
+          pl={5}
+          justifyContent={"center"}
+          pt={4}
+          pb={10}
+          display={["flex", "flex", "none", "none"]}
+        >
+          <img
+            src="https://mobilecontent.costco.com/live/resource/img/24w07030/m-24w07030_cat_hero_enfamil.jpg"
+            alt=""
+          />
+        </Flex>
+      </Link>
       <Box pr={[5, 5, 8, 20]} pl={[5, 5, 8, 20]}>
         <Box border={"1px solid rgba(0,0,0,0.3)"} borderRadius={20} pt={4}>
           <SimpleGrid
@@ -107,33 +166,6 @@ const Section2 = () => {
           </Text>
         </Box>
       </Box>
-      <Link to={"/baby"}>
-        <Flex
-          pr={20}
-          pl={20}
-          pt={4}
-          justifyContent={"center"}
-          display={["none", "none", "flex", "flex"]}
-        >
-          <img
-            src="https://mobilecontent.costco.com/live/resource/img/24w07030/d-24w07030_cat_hero_enfamil.jpg"
-            alt=""
-          />
-        </Flex>
-
-        <Flex
-          pr={5}
-          pl={5}
-          justifyContent={"center"}
-          pt={4}
-          display={["flex", "flex", "none", "none"]}
-        >
-          <img
-            src="https://mobilecontent.costco.com/live/resource/img/24w07030/m-24w07030_cat_hero_enfamil.jpg"
-            alt=""
-          />
-        </Flex>
-      </Link>
     </Box>
   );
 };

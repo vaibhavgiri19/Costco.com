@@ -50,18 +50,20 @@ export default function SimpleSlider() {
       },
     ],
   };
+  
 
   let arr = [
-    "https://mobilecontent.costco.com/live/resource/img/24w08143/d_24w08143_Hero_Apple_Watch_Mothers_Day.jpg",
-    "https://mobilecontent.costco.com/staging/resource/img/24w06223/d_24w06223_hero_april_mvm_tires.jpg",
-    "https://mobilecontent.costco.com/live/resource/img/20240429_EUR_Imgs/20240429_Europe_US_ComHero_D.jpg",
-    "https://mobilecontent.costco.com/staging/resource/img/24w08101/d_24w08101_appliances_homepage_hero_v03.jpg",
-    "https://mobilecontent.costco.com/live/resource/img/24w09075/d_24w09075_hero_mothers_day_gift_ideas.jpg",
-    "https://mobilecontent.costco.com/live/resource/img/24w09038/d_24w09038_april_audio_event_home_hero.jpg",
-    "https://mobilecontent.costco.com/live/resource/img/24w09041/d_24w09041_hero_apparel.jpg",
-    "https://mobilecontent.costco.com/live/resource/img/24w09040/d-24w09040_homepage_hero_mothers_day_bms.jpg",
-    "https://mobilecontent.costco.com/staging/resource/img/24w09058/d_24w09058_hero_first_quailty.jpg",
-    "https://mobilecontent.costco.com/live/resource/img/24w09038/d_24w09038_april_audio_event_home_hero.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/25w02073/d_25w02073_hero_tisdale.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/24w13226/d_24w13226_oct_mvm_cover_hero_v2.jpg",
+    "https://mobilecontent.costco.com/staging/resource/img/25w01039/d_25w01039_hero_holiday_home.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/25w01141/d_25w01141_hero_oct_connection.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/25w02002/d_25w02002_hero_ge_laundry.jpg",
+    "https://mobilecontent.costco.com/staging/resource/img/25w02003/d_25w02003_hero_apparel_bmas.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/25w02040/d_25w02040_cat_hero_samsung_day1.jpg",
+    "https://mobilecontent.costco.com/staging/resource/img/24w11034/d_24w11034_hero_halloween.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/25w02081/d_25w02081_hero_metaquest_02.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/25w02038/d_25w02038_hero_oct_mvm_featured_values.jpg",
+    "https://mobilecontent.costco.com/live/resource/img/20241007_MKT_LTD/20241007_MKT_LTD_US_DotComHero_D.jpg",
   ];
 
   return (

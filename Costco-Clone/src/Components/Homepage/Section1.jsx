@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 const Section1 = () => {
   return (
     <Box>
+     
       <Flex justifyContent={"center"} pr={[5, 5, 8, 10]} pl={[5, 5, 8, 10]}>
         <Link to={"/patio-covers"}>
           <img
-            src="https://mobilecontent.costco.com/live/resource/img/24w09031/d_24w09031_banner_backyard_oasis.jpg"
+            src="https://mobilecontent.costco.com/live/resource/img/25w01207/d_25w01207_hero_member_savings_event.jpg"
             alt=""
+            width={"1700px"}
           />
         </Link>
       </Flex>

@@ -7,6 +7,7 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
+  Stack,
   Popover,
   PopoverArrow,
   PopoverBody,
@@ -24,6 +25,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { PiPackageThin } from "react-icons/pi";
 import { GrFormSearch } from "react-icons/gr";
+import { AiOutlineSearch } from "react-icons/ai";
+import { FiShoppingCart, FiMenu } from "react-icons/fi";
 
 const Header = () => {
   const state = useSelector((state) => state.authentication);
@@ -63,15 +66,14 @@ const Header = () => {
     <Box>
       <Text
         textAlign={"center"}
-        fontSize={"20px"}
+        fontSize={"25px"}
         fontWeight={700}
-        _hover={{ textDecoration: "underline", cursor: "pointer" }}
-        bg={
-          "linear-gradient(90deg, rgba(66,234,247,1) 0%, rgba(0,255,151,1) 100%)"
-        }
+        color={"white"}
+        _hover={{ cursor: "pointer" }}
+        bg={"#0060A9"}
         p={0.5}
       >
-        Create Your Outdoor Oasis, Save On Backyard Upgrades!
+        Thomasville Tisdale Modular Sectional - $1,399.99 After $300 OFF
       </Text>
       <Flex
         gap={8}
@@ -79,7 +81,7 @@ const Header = () => {
         p={2}
         pr={16}
         fontWeight={400}
-        fontSize={"14px"}
+        fontSize={"22px"}
         color={"#0060A9"}
         bg={"#EEEEEE"}
         display={["none", "none", "none", "flex"]}
@@ -112,13 +114,13 @@ const Header = () => {
           _hover={{ textDecoration: "underline solid rgb(0,96,169)" }}
           cursor={"pointer"}
         >
-          Whats New
+          What's New
         </Text>
         <Text
           _hover={{ textDecoration: "underline solid rgb(0,96,169)" }}
           cursor={"pointer"}
         >
-          New Lower Prices
+          Member Favorites
         </Text>
         <Text
           _hover={{ textDecoration: "underline solid rgb(0,96,169)" }}
@@ -149,42 +151,42 @@ const Header = () => {
         pt={4}
         pr={5}
       >
-        <Flex width={20} cursor={"pointer"}>
+        {/* <Flex width={20} cursor={"pointer"}>
           <Link to="/">
             <img
-              src="https://www.costco.com/wcsstore/CostcoGLOBALSAS/images/Costco_Logo-1.png"
+              src="https://cdn.bfldr.com/56O3HXZ9/at/wkgcrwxgt5bt39wg63kgmqr/Costco-Logo-Registered.png?auto=webp&format=jpg"
               alt=""
             />
           </Link>
-        </Flex>
+        </Flex> */}
         <SimpleGrid
           gap={6}
           gridTemplateColumns={"repeat(3,1fr)"}
           alignItems={"center"}
           color={"#0060A9"}
-          fontSize={"16px"}
+          fontSize={"160px"}
           fontWeight={400}
         >
-          <SimpleGrid textAlign={"center"}>
+          {/* <SimpleGrid textAlign={"center"}>
             <Flex w={["20%", "20%"]} m={"auto"}>
               <img src="src\assets\maps-and-flags.png" alt="" />
             </Flex>
             <Text>Warehouses</Text>
-          </SimpleGrid>
-          <SimpleGrid textAlign={"center"}>
+          </SimpleGrid> */}
+          {/* <SimpleGrid textAlign={"center"}>
             <Flex w={["30%", "20%"]} margin={"auto"}>
               <img src="src\assets\user.png" alt="" />
             </Flex>
             <Text>Account</Text>
-          </SimpleGrid>
-          <SimpleGrid textAlign={"center"}>
+          </SimpleGrid> */}
+          {/* <SimpleGrid textAlign={"center"}>
             <Link to="/cart">
               <Flex w={["73%", "20%"]} m={"auto"}>
                 <FaShoppingCart />
               </Flex>
               <Text>Cart</Text>
             </Link>
-          </SimpleGrid>
+          </SimpleGrid> */}
         </SimpleGrid>
       </SimpleGrid>
       <SimpleGrid
@@ -303,7 +305,7 @@ const Header = () => {
             </MenuList>
           </Menu>
 
-          <Input
+          {/* <Input
             placeholder="Search"
             bg={"white"}
             borderRadius={"none"}
@@ -320,15 +322,18 @@ const Header = () => {
             borderRadius={"none"}
           >
             <GrFormSearch />
-          </Button>
+          </Button> */}
         </Flex>
         <Flex display={["none", "none", "flex", "flex"]}>
           <Input
-            placeholder="Search"
+            placeholder="Search Costco"
             bg={"white"}
             borderRadius={"none"}
-            border={"1px solid blue"}
+            border={"1px "}
+            borderColor="#0060A9"
             outline={"none"}
+            fontSize={"25px"}
+            height={"50px"}
           />
           <Button
             w={["none", "none", "30%", "10%"]}
@@ -336,20 +341,27 @@ const Header = () => {
             ml={-2}
             outline={"none"}
             _active={{ bg: "none", scale: "1.1" }}
-            border={"1px solid blue"}
+            border={"1px"}
+            borderColor="#0060A9"
             borderLeft={"none"}
             borderRadius={"none"}
+            height={"50px"}
           >
-            <GrFormSearch />
+            <AiOutlineSearch
+              color="#0060A9"
+              size={"40px"}
+              style={{ transform: "rotate(90deg)" }}
+            />
           </Button>
         </Flex>
         <Flex
-          gap={6}
+          gap={2}
           justifyContent={"center"}
           color={"#0060A9"}
-          fontSize={"16px"}
-          fontWeight={400}
+          fontSize={"20px"}
+          fontWeight={450}
           display={["none", "none", "flex", "flex"]}
+          alignItems="center"
         >
           {state.isAuth ? (
             <Logout />
@@ -360,26 +372,31 @@ const Header = () => {
                   textDecoration: "underline solid rgb(0,96,169)",
                   cursor: "pointer",
                 }}
+                fontSize={"22px"}
               >
-                Sign In/Register
+                Sign In / Register
               </Text>
             </Link>
           )}
 
-          <Text fontSize="100%" mt="-0.8%" p="0.4%">
+          <Text fontSize="22px" p="0 0.5rem">
             |
           </Text>
+
           <Text
             _hover={{
               textDecoration: "underline solid rgb(0,96,169)",
               cursor: "pointer",
             }}
+            fontSize={22}
           >
-            Order & Returns
+            Orders & Returns
           </Text>
-          <Text fontSize="100%" mt="-0.8%" p="0.4%">
+
+          <Text fontSize="22px" p="0 0.5rem">
             |
           </Text>
+
           <Link to={"/cart"}>
             <Flex
               alignItems={"center"}
@@ -388,10 +405,11 @@ const Header = () => {
                 textDecoration: "underline solid rgb(0,96,169)",
                 cursor: "pointer",
               }}
+              fontSize={22}
             >
               <Box width={"5"}>
                 <FaShoppingCart />
-              </Box>{" "}
+              </Box>
               Cart
             </Flex>
           </Link>
@@ -400,7 +418,9 @@ const Header = () => {
 
       <Flex
         display={["none", "none", "none", "flex"]}
-        bg={"#0073A6"}
+        bg={"#0060A9"}
+        fontSize={"22px"}
+        fontWeight={300}
         gap={10}
         alignItems={"center"}
         pl={"50px"}
@@ -408,12 +428,14 @@ const Header = () => {
         <Menu>
           <MenuButton
             as={Button}
-            bg={"#0073A6"}
+            bg={"#0060A9"}
             color={"white"}
             textAlign={"center"}
             _hover={"none"}
             _active={"none"}
-            fontWeight={700}
+            fontSize={"22px"}
+            fontWeight={600}
+            leftIcon={<FiMenu />}
           >
             Shop
           </MenuButton>
@@ -507,19 +529,21 @@ const Header = () => {
               Grocery
             </Text>
           </PopoverTrigger>
-          <PopoverContent w={600}>
+          <PopoverContent w={900} h={1200}>
             <PopoverArrow />
-            <PopoverHeader fontWeight={700} cursor={"pointer"}>
-              Grocery & Households
-            </PopoverHeader>
+
             <PopoverBody
-              color={"blue"}
+              color={"Black"}
+              fontWeight={400}
               cursor={"pointer"}
               display={"grid"}
               gridTemplateColumns={"repeat(2,1fr)"}
-              gap={`20`}
+              gap={50}
+
+              // width={"600px"}
+              // height={"800px"}
             >
-              <Box>
+              <Box fontSize={25}>
                 <Text>Gift Baskets</Text>
                 <Text>Organic</Text>
                 <Link to={"/baby"}>
@@ -537,6 +561,19 @@ const Header = () => {
                 <Text>Pantry & Dry Goods</Text>
                 <Text>Breakfast</Text>
                 <Text>Breverage & Water</Text>
+                <Text>Cheese & Dairy</Text>
+                <Text>Pantry & Dry Goods</Text>
+                <Text>Pet Supplies</Text>
+                <Text>SeaFood</Text>
+                <Text>Snacks & Dry Goods</Text>
+                <Text>Breakfast</Text>
+                <Text>Breverage & Water</Text>
+                <Text>Deli</Text>
+                <Text>Cheese & Dairy</Text>
+                <Text>Bakery & Desserts</Text>
+                <Text>Snacks</Text>
+                <Text>Candy</Text>
+                <Text>Pantry & Dry Goods</Text>
               </Box>
               <SimpleGrid gap={6}>
                 <Box>
@@ -552,15 +589,22 @@ const Header = () => {
                     2-Day Delivery
                   </Text>
                 </Box>
+
                 <Box>
-                  <img
-                    src="https://mobilecontent.costco.com/live/resource/img/23g0702/23g0702-grocery-feature.jpg"
-                    alt=""
-                  />
-                  <img
-                    src="https://mobilecontent.costco.com/live/resource/img/homepage/21w686-featured-popover-image.jpg"
-                    alt=""
-                  />
+                  <Stack spacing={60}>
+                    <img
+                      src="https://mobilecontent.costco.com/live/resource/img/23g0702/23g0702-grocery-feature.jpg"
+                      alt=""
+                      width={400}
+                      height={200}
+                    />
+                    <img
+                      src="https://mobilecontent.costco.com/live/resource/img/homepage/21w686-featured-popover-image.jpg"
+                      alt=""
+                      width={400}
+                      height={200}
+                    />
+                  </Stack>
                 </Box>
               </SimpleGrid>
             </PopoverBody>
@@ -604,7 +648,7 @@ const Header = () => {
               Deals
             </Text>
           </PopoverTrigger>
-          <PopoverContent w={600}>
+          <PopoverContent w={700}>
             <PopoverArrow />
             <PopoverHeader fontWeight={700} cursor={"pointer"}>
               Shop Deals by Department
@@ -613,7 +657,8 @@ const Header = () => {
               <SimpleGrid
                 gridTemplateColumns={"repeat(2,1fr)"}
                 gap={10}
-                color={"blue"}
+                color={"black"}
+                fontWeight={400}
               >
                 <SimpleGrid gap={2}>
                   <Link to={"/computer"}>
@@ -693,34 +738,36 @@ const Header = () => {
               Business Delivery
             </Text>
           </PopoverTrigger>
-          <PopoverContent w={600}>
+          <PopoverContent w={800} h={1000}>
             <PopoverArrow />
             <PopoverBody cursor={"pointer"}>
               <Flex justifyContent={"center"} mb={4}>
                 <img
-                  src="https://cdn.bfldr.com/52U6WI5T/at/s62hgz99k73mmsz2jzbm5w/bse-flyout.psd?auto=webp&format=jpg"
+                  src="https://cdn.bfldr.com/56O3HXZ9/at/3rrbk36bmbqkv4ksp63hmjfn/lp-hero-mobile-240924.jpg?auto=webp&format=jpg"
                   alt=""
+                  width={"98%"}
                 />
               </Flex>
               <Box>
                 <Text fontWeight={600} fontSize={"larger"} mb={2}>
                   Costco Business Center
                 </Text>
-                <Text mb={4}>
+                <Text mb={4} fontWeight={400}>
                   Find an expanded product selection for all types of
                   businesses, from professional <br /> offices to food service
                   operations. Our Costco Business Center warehouses are <br />{" "}
                   open to all members
                 </Text>
               </Box>
-              <Text fontWeight={600} fontSize={"1.5rem"} mb={2}>
+              <Text fontWeight={600} fontSize={"1.5rem"} mb={3}>
                 Shop by Department
               </Text>
               <SimpleGrid
                 gridTemplateColumns={"repeat(2,1fr)"}
-                gap={5}
-                mb={2}
-                color={"blue"}
+                gap={7}
+                mb={3}
+                color={"black"}
+                fontWeight={400}
               >
                 <SimpleGrid gap={3}>
                   <Text>Beverages</Text>
@@ -754,14 +801,14 @@ const Header = () => {
               Optical
             </Text>
           </PopoverTrigger>
-          <PopoverContent w={300}>
+          <PopoverContent w={500} h={320}>
             <PopoverArrow />
             <PopoverBody cursor={"pointer"}>
               <SimpleGrid
                 gridTemplateColumns={"repeat(2,1fr)"}
                 gap={5}
                 p={5}
-                color={"blue"}
+                color={"black"}
               >
                 <SimpleGrid gap={3}>
                   <Link to={"https://www.costco.com/optical.html"} gap={3}>
@@ -778,6 +825,15 @@ const Header = () => {
                   </Link>
                 </SimpleGrid>
               </SimpleGrid>
+              <Box pb={12} display="flex" justifyContent="center">
+                <img
+                  src="https://cdn.bfldr.com/56O3HXZ9/at/qkk7hgg46w67stq685qmx9b/optical-lenses.jpg?auto=webp&format=jpg"
+                  alt="Optical Lenses"
+                  width={"86%"}
+                  height={"auto"}
+                  objectFit={"cover"}
+                />
+              </Box>
             </PopoverBody>
           </PopoverContent>
         </Popover>
@@ -788,13 +844,14 @@ const Header = () => {
               Pharmacy
             </Text>
           </PopoverTrigger>
-          <PopoverContent w={600}>
+          <PopoverContent w={700} h={570}>
             <PopoverArrow />
             <PopoverBody cursor={"pointer"} p={10}>
               <SimpleGrid
                 gridTemplateColumns={"repeat(2,1fr)"}
                 gap={5}
-                color={"blue"}
+                color={"black"}
+                fontWeight={400}
               >
                 <SimpleGrid gap={3}>
                   <Text>Warehouse Pickup</Text>
@@ -804,13 +861,12 @@ const Header = () => {
                 <SimpleGrid gap={3}>
                   <Text>Immunizations</Text>
                   <Text>Pet Medication</Text>
-                  <Text>Medication</Text>
                 </SimpleGrid>
               </SimpleGrid>
               <Link to={"https://www.costco.com/pharmacy/warehouse-pickup"}>
                 <Flex justifyContent={"center"} mt={3}>
                   <img
-                    src="https://mobilecontent.costco.com/live/resource/img/static-us-landing-pages/23-CP-1001_Costco_COVID-19_WebsiteHeros_Update_1054_561.jpg"
+                    src="https://mobilecontent.costco.com/live/resource/img/23w13157/m-23w1357-fq-hero-school-pharmacy-vaccinations.jpg"
                     alt=""
                   />
                 </Flex>
@@ -831,11 +887,12 @@ const Header = () => {
               <SimpleGrid
                 gridTemplateColumns={"repeat(4,1fr)"}
                 gap={5}
-                color={"blue"}
+                color={"black"}
                 alignItems={"start"}
+                fontWeight={500}
               >
                 <SimpleGrid gap={3}>
-                  <Text fontSize={"1.3rem"} color={"black"}>
+                  <Text fontSize={"1.3rem"} color={"black"} fontWeight={600}>
                     Insurance
                   </Text>
                   <SimpleGrid gap={3}>
@@ -847,7 +904,7 @@ const Header = () => {
                 </SimpleGrid>
 
                 <SimpleGrid gap={3}>
-                  <Text fontSize={"1.3rem"} color={"black"}>
+                  <Text fontSize={"1.3rem"} color={"black"} fontWeight={600}>
                     Home
                   </Text>
                   <SimpleGrid gap={3}>
@@ -859,7 +916,7 @@ const Header = () => {
                 </SimpleGrid>
 
                 <SimpleGrid gap={3}>
-                  <Text fontSize={"1.3rem"} color={"black"}>
+                  <Text fontSize={"1.3rem"} color={"black"} fontWeight={600}>
                     Auto
                   </Text>
                   <SimpleGrid gap={3}>
@@ -870,7 +927,7 @@ const Header = () => {
                 </SimpleGrid>
 
                 <SimpleGrid gap={3}>
-                  <Text fontSize={"1.3rem"} color={"black"}>
+                  <Text fontSize={"1.3rem"} color={"black"} fontWeight={600}>
                     Business
                   </Text>
                   <SimpleGrid gap={3}>
@@ -883,7 +940,7 @@ const Header = () => {
                 </SimpleGrid>
 
                 <SimpleGrid gap={3}>
-                  <Text fontSize={"1.3rem"} color={"black"}>
+                  <Text fontSize={"1.3rem"} color={"black"} fontWeight={600}>
                     Home Improvement
                   </Text>
                   <SimpleGrid gap={3}>
@@ -900,10 +957,13 @@ const Header = () => {
                   </SimpleGrid>
                 </SimpleGrid>
 
-                <Flex>
+                <Flex justify="flex-end" gridColumn="span 3" mt={8}>
+                  {" "}
+                  {/* Aligns image to the right */}
                   <img
-                    src="https://mobilecontent.costco.com/live/resource/img/banners/2024_Spotlight_Service_Page_Hero_Desktop_716x481.jpg"
-                    alt=""
+                    src="https://cdn.bfldr.com/56O3HXZ9/at/cv2sgxjvgzqw5wf599r6xtz/240901-services-popover.png?auto=webp&format=jpg"
+                    alt="Services"
+                    style={{ width: "800px", height: "auto" }} // Adjust width as needed
                   />
                 </Flex>
               </SimpleGrid>
@@ -921,12 +981,12 @@ const Header = () => {
               Travel
             </Text>
           </PopoverTrigger>
-          <PopoverContent w={600}>
+          <PopoverContent w={700}>
             <PopoverArrow />
             <PopoverBody cursor={"pointer"}>
               <Flex justifyContent={"center"} mb={4}>
                 <img
-                  src="https://mobilecontent.costco.com/live/resource/img/20240415_eSpot_Imgs/20240415_US_Dynamic_eSpot.jpg"
+                  src="https://mobilecontent.costco.com/live/resource/img/20241007_CRS_eSpot_Imgs/D_20241007_MKT_CRS_eSpot_Hero.jpg"
                   alt=""
                 />
               </Flex>
@@ -947,7 +1007,7 @@ const Header = () => {
                 gridTemplateColumns={"repeat(2,1fr)"}
                 gap={5}
                 mb={2}
-                color={"blue"}
+                color={"black"}
                 alignItems={"start"}
               >
                 <SimpleGrid gap={3}>
@@ -1001,7 +1061,7 @@ const Header = () => {
           >
             <PopoverArrow />
             <PopoverBody cursor={"pointer"}>
-              <SimpleGrid gap={3} color={"blue"}>
+              <SimpleGrid gap={3} color={"black"}>
                 <Text>Join Today</Text>
                 <Text>Renew Membership</Text>
                 <Text>Upgrade to Executive</Text>
@@ -1018,9 +1078,35 @@ const Header = () => {
           </PopoverContent>
         </Popover>
 
-        <Text fontWeight={600} color={"white"} cursor={"pointer"}>
-          Location
-        </Text>
+        <Popover>
+          <PopoverTrigger>
+            <Text cursor={"pointer"} fontWeight={600} color={"white"}>
+              Locations
+            </Text>
+          </PopoverTrigger>
+          <PopoverContent w={600} h={800}>
+            <PopoverArrow />
+            <PopoverBody cursor={"pointer"}>
+              <SimpleGrid gap={3} color={"black"}>
+                <Text>Locations & Services</Text>
+                <Text>Find a Wherehouse</Text>
+                <Text>Locations Coming Soon</Text>
+                <Text>Hours & Holiday Closures</Text>
+                <Text>Gasoline</Text>
+                <Text>Hearing Aid Center</Text>
+                <Text>Special Events</Text>
+                <Flex justifyContent={"center"}>
+                  <img
+                    src="https://cdn.bfldr.com/56O3HXZ9/at/sp2sctk885gkxz74xsfwrs95/25w13223_oct_mvm_flyout.jpg?auto=webp&format=jpg"
+                    alt=""
+                    width={"450px"}
+                    height={"400px"}
+                  />
+                </Flex>
+              </SimpleGrid>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
       </Flex>
 
       <Flex boxShadow={"base"} p={4} pl={14} justifyContent={"space-between"}>

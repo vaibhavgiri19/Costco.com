@@ -66,14 +66,14 @@ const Header = () => {
     <Box>
       <Text
         textAlign={"center"}
-        fontSize={"25px"}
+        fontSize={"18px"}
         fontWeight={700}
         color={"white"}
         _hover={{ cursor: "pointer" }}
         bg={"#0060A9"}
         p={0.5}
       >
-        Thomasville Tisdale Modular Sectional - $1,399.99 After $300 OFF
+        Southwest Airlines $500 eGift Card - $449.99 eDelivery
       </Text>
       <Flex
         gap={8}

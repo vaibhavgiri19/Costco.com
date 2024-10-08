@@ -27,11 +27,14 @@ Costco is a membership warehouse club, dedicated to bringing our members the bes
 ## Screenshots 📸
 Here are some screenshots of the project:
 
-![Home Page](https://your-image-url.com/homepage-screenshot.png)
+![Home Page](https://github.com/vaibhavgiri19/Costco.com/blob/main/Costco-Clone/src/assets/home%20page.png)
 *Home Page showcasing featured products.*
 
-![Login Page](https://your-image-url.com/loginpage-screenshot.png)
+![Login Page](https://github.com/vaibhavgiri19/Costco.com/blob/main/Costco-Clone/src/assets/login%20page.png)
 *Login Page for user authentication.*
 
-![Cart Page](https://github.com/vaibhavgiri19/Costco.com/blob/main/Costco-Clone/src/assets/cart.png)
+![Signup Page](https://github.com/vaibhavgiri19/Costco.com/blob/main/Costco-Clone/src/assets/Signup%20page.png)
+*Signup Page for new user to create account.*
+
+![Cart Page](https://github.com/vaibhavgiri19/Costco.com/blob/main/Costco-Clone/src/assets/Cart%20page.png)
 *Cart Page where users can review their selected items.*

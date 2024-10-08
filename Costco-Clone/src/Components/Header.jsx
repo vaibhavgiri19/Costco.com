@@ -66,7 +66,7 @@ const Header = () => {
     <Box>
       <Text
         textAlign={"center"}
-        fontSize={"18px"}
+        fontSize={"20px"}
         fontWeight={700}
         color={"white"}
         _hover={{ cursor: "pointer" }}
@@ -81,7 +81,7 @@ const Header = () => {
         p={2}
         pr={16}
         fontWeight={400}
-        fontSize={"22px"}
+        fontSize={"18px"}
         color={"#0060A9"}
         bg={"#EEEEEE"}
         display={["none", "none", "none", "flex"]}
@@ -164,7 +164,7 @@ const Header = () => {
           gridTemplateColumns={"repeat(3,1fr)"}
           alignItems={"center"}
           color={"#0060A9"}
-          fontSize={"160px"}
+          fontSize={"100px"}
           fontWeight={400}
         >
           {/* <SimpleGrid textAlign={"center"}>
@@ -332,7 +332,7 @@ const Header = () => {
             border={"1px "}
             borderColor="#0060A9"
             outline={"none"}
-            fontSize={"25px"}
+            fontSize={"20px"}
             height={"50px"}
           />
           <Button
@@ -349,7 +349,7 @@ const Header = () => {
           >
             <AiOutlineSearch
               color="#0060A9"
-              size={"40px"}
+              size={"30px"}
               style={{ transform: "rotate(90deg)" }}
             />
           </Button>
@@ -372,14 +372,14 @@ const Header = () => {
                   textDecoration: "underline solid rgb(0,96,169)",
                   cursor: "pointer",
                 }}
-                fontSize={"22px"}
+                fontSize={"18px"}
               >
                 Sign In / Register
               </Text>
             </Link>
           )}
 
-          <Text fontSize="22px" p="0 0.5rem">
+          <Text fontSize="18px" p="0 0.5rem">
             |
           </Text>
 
@@ -388,12 +388,12 @@ const Header = () => {
               textDecoration: "underline solid rgb(0,96,169)",
               cursor: "pointer",
             }}
-            fontSize={22}
+            fontSize={18}
           >
             Orders & Returns
           </Text>
 
-          <Text fontSize="22px" p="0 0.5rem">
+          <Text fontSize="18px" p="0 0.5rem">
             |
           </Text>
 
@@ -405,7 +405,7 @@ const Header = () => {
                 textDecoration: "underline solid rgb(0,96,169)",
                 cursor: "pointer",
               }}
-              fontSize={22}
+              fontSize={18}
             >
               <Box width={"5"}>
                 <FaShoppingCart />
@@ -419,7 +419,7 @@ const Header = () => {
       <Flex
         display={["none", "none", "none", "flex"]}
         bg={"#0060A9"}
-        fontSize={"22px"}
+        fontSize={"18px"}
         fontWeight={300}
         gap={10}
         alignItems={"center"}
@@ -433,7 +433,7 @@ const Header = () => {
             textAlign={"center"}
             _hover={"none"}
             _active={"none"}
-            fontSize={"22px"}
+            fontSize={"19px"}
             fontWeight={600}
             leftIcon={<FiMenu />}
           >
@@ -529,7 +529,7 @@ const Header = () => {
               Grocery
             </Text>
           </PopoverTrigger>
-          <PopoverContent w={900} h={1200}>
+          <PopoverContent w={700} h={"auto"}>
             <PopoverArrow />
 
             <PopoverBody
@@ -543,7 +543,7 @@ const Header = () => {
               // width={"600px"}
               // height={"800px"}
             >
-              <Box fontSize={25}>
+              <Box fontSize={18}>
                 <Text>Gift Baskets</Text>
                 <Text>Organic</Text>
                 <Link to={"/baby"}>
@@ -591,7 +591,7 @@ const Header = () => {
                 </Box>
 
                 <Box>
-                  <Stack spacing={60}>
+                  <Stack spacing={55}>
                     <img
                       src="https://mobilecontent.costco.com/live/resource/img/23g0702/23g0702-grocery-feature.jpg"
                       alt=""

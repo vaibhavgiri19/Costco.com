@@ -257,6 +257,13 @@ const Section3 = () => {
           </Box>
         </Link>
       </SimpleGrid>
+
+      
+
+
+      
+
+      
     </Box>
   );
 };

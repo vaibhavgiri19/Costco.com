@@ -33,5 +33,5 @@ Here are some screenshots of the project:
 ![Login Page](https://your-image-url.com/loginpage-screenshot.png)
 *Login Page for user authentication.*
 
-![Cart Page](C:\Users\Vaibhav\Desktop\Masai\cw-project\Costco.com\Costco-Clone\src\assets\cart.png)
+![Cart Page](https://github.com/vaibhavgiri19/Costco.com/blob/main/Costco-Clone/src/assets/cart.png)
 *Cart Page where users can review their selected items.*

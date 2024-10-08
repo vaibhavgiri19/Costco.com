@@ -358,7 +358,7 @@ const Header = () => {
           gap={2}
           justifyContent={"center"}
           color={"#0060A9"}
-          fontSize={"20px"}
+          fontSize={"18px"}
           fontWeight={450}
           display={["none", "none", "flex", "flex"]}
           alignItems="center"
@@ -372,14 +372,14 @@ const Header = () => {
                   textDecoration: "underline solid rgb(0,96,169)",
                   cursor: "pointer",
                 }}
-                fontSize={"18px"}
+                fontSize={"16px"}
               >
                 Sign In / Register
               </Text>
             </Link>
           )}
 
-          <Text fontSize="18px" p="0 0.5rem">
+          <Text fontSize="16px" p="0 0.5rem">
             |
           </Text>
 
@@ -388,7 +388,7 @@ const Header = () => {
               textDecoration: "underline solid rgb(0,96,169)",
               cursor: "pointer",
             }}
-            fontSize={18}
+            fontSize={16}
           >
             Orders & Returns
           </Text>
@@ -405,7 +405,7 @@ const Header = () => {
                 textDecoration: "underline solid rgb(0,96,169)",
                 cursor: "pointer",
               }}
-              fontSize={18}
+              fontSize={16}
             >
               <Box width={"5"}>
                 <FaShoppingCart />

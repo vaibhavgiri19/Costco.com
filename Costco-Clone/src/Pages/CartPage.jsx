@@ -123,7 +123,7 @@ const CartPage = () => {
                             Estimated Delivery
                           </Text>
                           <Text fontWeight={600} color={"green"}>
-                            5 to 6 Days
+                          Friday, October 11, 2024
                           </Text>
                         </Box>
 
